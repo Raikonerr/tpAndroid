@@ -9,17 +9,17 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
-import com.example.systemcapabilitiesactivity.databinding.ActivityEmailBinding;
+import com.example.systemcapabilitiesactivity.databinding.ActivityNavBinding;
 
 public class NavActivity extends AppCompatActivity {
 
-    private ActivityEmailBinding binding;
+    private ActivityNavBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        binding = ActivityEmailBinding.inflate(getLayoutInflater());
+        binding = ActivityNavBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
         BottomNavigationView navView = findViewById(R.id.nav_view);
