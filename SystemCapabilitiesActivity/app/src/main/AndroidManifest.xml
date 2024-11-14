@@ -12,9 +12,11 @@
         android:theme="@style/Theme.SystemCapabilitiesActivity"
         tools:targetApi="31">
         <activity
+
             android:name=".navViewActivity"
             android:exported="false"
             android:label="@string/title_activity_nav_view" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
