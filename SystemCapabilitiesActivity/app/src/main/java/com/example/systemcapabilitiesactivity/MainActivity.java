@@ -14,12 +14,22 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button phoneButton = findViewById(R.id.btnPhoneCall);
+        Button SendSMSButton = findViewById(R.id.btnSendSMS);
 
         phoneButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // Navigate to phoneCallActivity
                 Intent intent = new Intent(MainActivity.this, phoneCallActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        SendSMSButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Navigate to SendSMSActivity
+                Intent intent = new Intent(MainActivity.this, SendSMSActivity.class);
                 startActivity(intent);
             }
         });

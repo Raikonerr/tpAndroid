@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SendSMSActivity">
+
+    <EditText
+        android:id="@+id/PhoneNo"
+        android:layout_width="307dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="128dp"
+        android:background="@android:drawable/editbox_background"
+        android:hint="Please enter your phone number"
+        android:inputType="phone"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/textSMS"
+        android:layout_width="374dp"
+        android:layout_height="367dp"
+        android:layout_marginTop="32dp"
+        android:background="@android:drawable/editbox_background"
+        android:hint="Message..."
+        android:inputType="textCapSentences|textImeMultiLine"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PhoneNo" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/sendbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="544dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="onSend"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/PhoneNo"
+        app:srcCompat="@android:drawable/ic_menu_send" />
+
+</android.support.constraint.ConstraintLayout>
