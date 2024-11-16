@@ -8,8 +8,8 @@
 
     <EditText
         android:id="@+id/PhoneNo"
-        android:layout_width="282dp"
-        android:layout_height="62dp"
+        android:layout_width="307dp"
+        android:layout_height="55dp"
         android:layout_marginTop="128dp"
         android:background="@android:drawable/editbox_background"
         android:hint="Please enter your phone number"
@@ -38,13 +38,13 @@
         android:id="@+id/sendbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginBottom="576dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="544dp"
         android:clickable="true"
         android:focusable="true"
+        android:onClick="onSend"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/PhoneNo"
-        app:srcCompat="@android:drawable/ic_menu_send"
-        android:onClick="onSend"/>
+        app:srcCompat="@android:drawable/ic_menu_send" />
 
 </android.support.constraint.ConstraintLayout>
