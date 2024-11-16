@@ -7,5 +7,8 @@
     <string name="title_email_list">Emails</string>
     <string name="title_email_detail">Email Detail</string>
     <string name="title_activity_email">EmailActivity</string>
+    <string name="title_home">home</string>
+    <string name="title_dashboard">dashboard\n</string>
+    <string name="title_notifications">notifications\n</string>
 
 </resources>
