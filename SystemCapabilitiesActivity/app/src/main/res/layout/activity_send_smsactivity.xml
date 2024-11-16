@@ -7,7 +7,7 @@
     tools:context=".SendSMSActivity">
 
     <EditText
-        android:id="@+id/editTextPhone"
+        android:id="@+id/PhoneNo"
         android:layout_width="282dp"
         android:layout_height="62dp"
         android:layout_marginTop="128dp"
@@ -21,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/InputMessage"
+        android:id="@+id/textSMS"
         android:layout_width="374dp"
         android:layout_height="367dp"
         android:layout_marginTop="32dp"
@@ -32,7 +32,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.432"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+        app:layout_constraintTop_toBottomOf="@+id/PhoneNo" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/sendbtn"
@@ -43,7 +43,7 @@
         android:clickable="true"
         android:focusable="true"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/editTextPhone"
+        app:layout_constraintStart_toEndOf="@+id/PhoneNo"
         app:srcCompat="@android:drawable/ic_menu_send" />
 
 </android.support.constraint.ConstraintLayout>
