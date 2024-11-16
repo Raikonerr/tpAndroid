@@ -24,7 +24,7 @@ public class phoneCallActivity extends AppCompatActivity {
         setContentView(R.layout.activity_phone_call);
 
         phoneNO = findViewById(R.id.editTextPhone);
-        callbtn = findViewById(R.id.calbtn);
+        callbtn = findViewById(R.id.callbtn);
 
         // Check for phone call permission
         if (ContextCompat.checkSelfPermission(phoneCallActivity.this,
@@ -49,7 +49,7 @@ public class phoneCallActivity extends AppCompatActivity {
                 if (ContextCompat.checkSelfPermission(phoneCallActivity.this,
                         Manifest.permission.CALL_PHONE) == PackageManager.PERMISSION_GRANTED) {
                     // Make the call
-                    Intent i = new Intent(Intent.ACTION_CALL);
+                    Intent i = new Intent(Intent.ACTION_DIAL);
                     i.setData(Uri.parse("tel:" + phoneNumber));
                     startActivity(i);
                 } else {
@@ -59,6 +59,7 @@ public class phoneCallActivity extends AppCompatActivity {
                     // Request permission again
                     ActivityCompat.requestPermissions(phoneCallActivity.this,
                             new String[]{Manifest.permission.CALL_PHONE}, PERMISSION_CODE);
+
                 }
             }
         });

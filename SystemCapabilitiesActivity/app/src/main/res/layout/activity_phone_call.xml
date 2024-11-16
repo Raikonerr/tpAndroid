@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/calbtn"
+        android:id="@+id/callbtn"
         android:layout_width="56dp"
         android:layout_height="52dp"
         android:layout_marginTop="76dp"
@@ -29,6 +29,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextPhone"
-        app:srcCompat="@drawable/phone_receiver_silhouette" />
+        app:srcCompat="@drawable/phone_receiver_silhouette"
+        android:onClick="onClick"/>
 
 </android.support.constraint.ConstraintLayout>
