@@ -23,4 +23,12 @@
         android:layout_height="wrap_content"
         android:text="Go to Phone Call Activity" />
 
+    <!-- Button to Navigate to Send SMS Activity -->
+    <Button
+        android:id="@+id/btnSendSMS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go to Send SMS Activity" />
+
+
 </LinearLayout>
